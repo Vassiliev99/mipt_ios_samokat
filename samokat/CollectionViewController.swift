@@ -39,6 +39,14 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
         
     ]
     
+    let images: [UIImage] = [
+        UIImage(named: "breakfast")!,
+        UIImage(named: "new")!,
+        UIImage(named: "newyear")!,
+        UIImage(named: "cashier")!,
+        UIImage(named: "international")!
+    ]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -101,7 +109,7 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
         
         if let categoryCell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as? CollectionViewCell {
             
-            categoryCell.configure(with: dataMain[indexPath.section][1][indexPath.row])
+            categoryCell.configure(with: dataMain[indexPath.section][1][indexPath.row], with: images[indexPath.row])
             cell = categoryCell
         }
         

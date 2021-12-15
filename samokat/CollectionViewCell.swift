@@ -13,8 +13,11 @@ class CollectionViewCell: UICollectionViewCell {
     
     @IBOutlet private weak var cellNameLabel: UILabel!
     
-    func configure(with cellName: String) {
+    @IBOutlet weak var cellImage: UIImageView!
+    
+    func configure(with cellName: String, with image: UIImage) {
         cellNameLabel.text = cellName
+        cellImage.image = image
     }
     
     override func awakeFromNib() {
