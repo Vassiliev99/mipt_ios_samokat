@@ -15,9 +15,9 @@ class CollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var cellImage: UIImageView!
     
-    func configure(with cellName: String, with image: UIImage) {
+    func configure(with cellName: String, with imageName: String) {
         cellNameLabel.text = cellName
-        cellImage.image = image
+        cellImage.image = UIImage(named: imageName)
     }
     
     override func awakeFromNib() {

@@ -14,37 +14,39 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
     let dataMain = [
         [
             ["Main"],
-            ["New", "Breakfast", "New Year", "International", "Cashier"]
+            ["New", "Breakfast", "New Year", "International", "Cashier"],
+            ["new", "breakfast", "newyear", "international", "cashier"]
         ],
         [
             ["By Samokat"],
-            ["Food", "Beverages", "Sweets & Snacks", "Cleaning"]
+            ["Food", "Beverages", "Sweets & Snacks", "Cleaning"],
+            ["food", "beverages", "sweetssnacks", "cleaning"],
         ],
         [
             ["Almost ready"],
-            ["Ready-to-eat", "Unfreeze", "Cook quickly",]
+            ["Ready-to-eat", "Unfreeze", "Cook quickly"],
+            ["readytoeat", "unfreeze", "cookquick"]
         ],
         [
             ["Milk, eggs, cheese"],
-            ["Milk & Eggs", "Yogurts & Desserts", "Cheese"]
+            ["Milk & Eggs", "Yogurts & Desserts", "Cheese"],
+            ["milk", "yogurt", "cheese"]
         ],
         [
             ["Bread & Pastry"],
-            ["Bread", "Pastry", "Breadcrumbs"]
+            ["Bread", "Pastry", "Breadcrumbs"],
+            ["bread", "pastry", "breadcrumbs"]
         ],
         [
             ["Fruits & Vegetables"],
-            ["Season", "Vegetables", "Fruits & Berries"]
+            ["Season now", "Vegetables", "Fruits & Berries"],
+            ["season", "vegetables", "fruits"],
+        ],
+        [
+            ["Meat & Fish"],
+            ["Meat", "Chicken", "Sausages", "Fish & Seafood"],
+            ["meat", "chicken", "sausage", "fish"],
         ]
-        
-    ]
-    
-    let images: [UIImage] = [
-        UIImage(named: "breakfast")!,
-        UIImage(named: "new")!,
-        UIImage(named: "newyear")!,
-        UIImage(named: "cashier")!,
-        UIImage(named: "international")!
     ]
     
     override func viewDidLoad() {
@@ -109,7 +111,7 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
         
         if let categoryCell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as? CollectionViewCell {
             
-            categoryCell.configure(with: dataMain[indexPath.section][1][indexPath.row], with: images[indexPath.row])
+            categoryCell.configure(with: dataMain[indexPath.section][1][indexPath.row], with: dataMain[indexPath.section][2][indexPath.row])
             cell = categoryCell
         }
         
