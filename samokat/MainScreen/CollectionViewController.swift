@@ -8,8 +8,11 @@
 import UIKit
 
 class CollectionViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
+    
+    override open var shouldAutorotate: Bool {
+        return false
+    }
 
-    let dataSource: [String] = ["Whats new", "Breakfast", "New Year", "International", "Cashier"]
     
     let dataMain = [
         [

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B07AA12A276F9541009EEF91 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07AA129276F9541009EEF91 /* CategoryViewController.swift */; };
+		B07AA12D276FADAC009EEF91 /* DiscountCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07AA12C276FADAC009EEF91 /* DiscountCollectionViewCell.swift */; };
 		B0A97F842769137E0051D605 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A97F832769137E0051D605 /* AppDelegate.swift */; };
 		B0A97F862769137E0051D605 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A97F852769137E0051D605 /* SceneDelegate.swift */; };
 		B0A97F8B2769137E0051D605 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0A97F892769137E0051D605 /* Main.storyboard */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B07AA129276F9541009EEF91 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		B07AA12C276FADAC009EEF91 /* DiscountCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscountCollectionViewCell.swift; sourceTree = "<group>"; };
 		B0A97F802769137E0051D605 /* samokat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = samokat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0A97F832769137E0051D605 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0A97F852769137E0051D605 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +47,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B07AA12B276FAD35009EEF91 /* MainScreen */ = {
+			isa = PBXGroup;
+			children = (
+				B0A97F9727693B900051D605 /* CollectionViewController.swift */,
+				B0A97F9927693F530051D605 /* CollectionViewCell.swift */,
+				B0A97F9B27697A040051D605 /* HeaderCollectionReusableView.swift */,
+				B0A97F9D276991170051D605 /* FooterCollectionReusableView.swift */,
+			);
+			path = MainScreen;
+			sourceTree = "<group>";
+		};
+		B07AA12E276FB1DF009EEF91 /* CategoryScreen */ = {
+			isa = PBXGroup;
+			children = (
+				B07AA129276F9541009EEF91 /* CategoryViewController.swift */,
+				B07AA12C276FADAC009EEF91 /* DiscountCollectionViewCell.swift */,
+			);
+			path = CategoryScreen;
+			sourceTree = "<group>";
+		};
 		B0A97F772769137E0051D605 = {
 			isa = PBXGroup;
 			children = (
@@ -62,16 +86,14 @@
 		B0A97F822769137E0051D605 /* samokat */ = {
 			isa = PBXGroup;
 			children = (
+				B07AA12E276FB1DF009EEF91 /* CategoryScreen */,
+				B07AA12B276FAD35009EEF91 /* MainScreen */,
 				B0A97F832769137E0051D605 /* AppDelegate.swift */,
 				B0A97F852769137E0051D605 /* SceneDelegate.swift */,
 				B0A97F892769137E0051D605 /* Main.storyboard */,
 				B0A97F8C2769137F0051D605 /* Assets.xcassets */,
 				B0A97F8E2769137F0051D605 /* LaunchScreen.storyboard */,
 				B0A97F912769137F0051D605 /* Info.plist */,
-				B0A97F9727693B900051D605 /* CollectionViewController.swift */,
-				B0A97F9927693F530051D605 /* CollectionViewCell.swift */,
-				B0A97F9B27697A040051D605 /* HeaderCollectionReusableView.swift */,
-				B0A97F9D276991170051D605 /* FooterCollectionReusableView.swift */,
 			);
 			path = samokat;
 			sourceTree = "<group>";
@@ -149,9 +171,11 @@
 			files = (
 				B0A97F9827693B900051D605 /* CollectionViewController.swift in Sources */,
 				B0A97F842769137E0051D605 /* AppDelegate.swift in Sources */,
+				B07AA12A276F9541009EEF91 /* CategoryViewController.swift in Sources */,
 				B0A97F9A27693F530051D605 /* CollectionViewCell.swift in Sources */,
 				B0A97F9C27697A040051D605 /* HeaderCollectionReusableView.swift in Sources */,
 				B0A97F9E276991170051D605 /* FooterCollectionReusableView.swift in Sources */,
+				B07AA12D276FADAC009EEF91 /* DiscountCollectionViewCell.swift in Sources */,
 				B0A97F862769137E0051D605 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
