@@ -18,7 +18,10 @@ class CollectionViewCell: UICollectionViewCell {
     func configure(with cellName: String, with imageName: String) {
         cellNameLabel.text = cellName
         cellImage.image = UIImage(named: imageName)
+        cellNameValue = cellName
     }
+    
+    var cellNameValue: String = ""
     
     override func awakeFromNib() {
         super.awakeFromNib()

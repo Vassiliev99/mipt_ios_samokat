@@ -121,5 +121,11 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
         return cell
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let vc = segue.destination as! Category2CollectionViewController
+        
+        vc.categoryName = (sender as! CollectionViewCell).cellNameValue
+        
+    }
     
 }

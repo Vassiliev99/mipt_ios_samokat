@@ -16,24 +16,34 @@ class Category2CollectionViewController: UICollectionViewController, UICollectio
     
     let dataMain = [
         [
-            ["Discounts"],
+            ["Discounts %"],
             ["Cucumbers", "Tomatoes", "Apples"],
-            ["breakfast", "new", "new"],
+            ["bread", "season", "new"],
             ["100", "200", "300"],
             ["500", "500", "500"]
         ],
         [
             ["Tomatoes"],
             ["Tomatoes Ekokultura", "Tomatoes Cherry yellow"],
-            ["new", "new"],
+            ["vegetables", "vegetables"],
             ["209", "155"],
             ["350", "250"]
-        ]
+        ],
+        [
+            ["Apples"],
+            ["Apples Russia", "Apples Golden", "Apples Granny Smith", "Apples Red Delicios", "Apples Crispy"],
+            ["vegetables", "vegetables", "vegetables", "vegetables", "newyear"],
+            ["79", "99", "99", "99", "115"],
+            ["1000", "500", "500", "500", "400"]
+        ],
+    
     ]
+    
+    var categoryName: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Category"
+        title = categoryName
 
         guard let category2CollectionView = collectionView, let flowLayout = category2CollectionView.collectionViewLayout as? UICollectionViewFlowLayout else { return }
         
@@ -100,5 +110,13 @@ class Category2CollectionViewController: UICollectionViewController, UICollectio
         
         return cell
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let vc = segue.destination as! ItemScreenViewController
+        
+        vc.itemNameValue = (sender as! Ctaegory2CollectionViewCell).item2Name!.text!
+        vc.itemImageValue = (sender as! Ctaegory2CollectionViewCell).item2ImageName
+        vc.itemPriceValue = (sender as! Ctaegory2CollectionViewCell).item2PriceValue
+        vc.itemWeightValue = (sender as! Ctaegory2CollectionViewCell).item2WeightValue    }
 
 }
