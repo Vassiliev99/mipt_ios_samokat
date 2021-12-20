@@ -17,25 +17,32 @@ class Category2CollectionViewController: UICollectionViewController, UICollectio
     let dataMain = [
         [
             ["Discounts %"],
-            ["Cucumbers", "Tomatoes", "Apples"],
-            ["bread", "season", "new"],
-            ["100", "200", "300"],
-            ["500", "500", "500"]
+            ["Cucumbers Russia", "Tomatoes Ekokultura", "Apples Red Delicios"],
+            ["vegetables", "tomatoes1", "apples4"],
+            ["100", "209", "300"],
+            ["500", "350", "500"]
         ],
         [
             ["Tomatoes"],
             ["Tomatoes Ekokultura", "Tomatoes Cherry yellow"],
-            ["vegetables", "vegetables"],
+            ["tomatoes1", "tomatoes2"],
             ["209", "155"],
             ["350", "250"]
         ],
         [
             ["Apples"],
             ["Apples Russia", "Apples Golden", "Apples Granny Smith", "Apples Red Delicios", "Apples Crispy"],
-            ["vegetables", "vegetables", "vegetables", "vegetables", "newyear"],
+            ["apples1", "apples2", "apples3", "apples4", "apples5"],
             ["79", "99", "99", "99", "115"],
             ["1000", "500", "500", "500", "400"]
         ],
+        [
+            ["Cucumbers"],
+            ["Cucumbers Russia"],
+            ["vegetables"],
+            ["100"],
+            ["500"]
+        ]
     
     ]
     
